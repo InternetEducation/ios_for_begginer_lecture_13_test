@@ -23,7 +23,7 @@ class TinkoffCalculatorUITests: XCTestCase {
         app.buttons["3"].tap()
         app.buttons["="].tap()
 
-        app.buttons["toHistoryPageButton"].tap()
+        app.buttons["historyButton"].tap()
 
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"

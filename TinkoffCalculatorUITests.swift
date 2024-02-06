@@ -34,7 +34,7 @@ class TinkoffCalculatorUITests: XCTestCase {
         app.terminate()
         app.launch()
 
-        app.buttons["toHistoryPageButton"].tap()
+        app.buttons["historyButton"].tap()
         XCTAssertTrue(app.tables.firstMatch.otherElements.containing(.staticText, identifier: dateString).firstMatch.exists)
     }
 }
